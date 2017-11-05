@@ -1,0 +1,21 @@
+<div>
+  <mat-form-field class="qInput">
+    <input matInput type="number" [(ngModel)]="w" (change)="onChanged()" (keyup)="__checkNumber($event)" />
+    <mat-hint align="start"><strong>W</strong></mat-hint>
+  </mat-form-field>
+
+  <mat-form-field class="qInput qSpaceLeft">
+    <input matInput type="number" [(ngModel)]="i" (change)="onChanged()" (keyup)="__checkNumber($event)"/>
+    <mat-hint align="start"><strong>I</strong></mat-hint>
+  </mat-form-field>
+
+  <mat-form-field class="qInput qSpaceLeft">
+    <input matInput type="number" [(ngModel)]="j" (change)="onChanged()" (keyup)="__checkNumber($event)"/>
+    <mat-hint align="start"><strong>J</strong></mat-hint>
+  </mat-form-field>
+
+  <mat-form-field class="qInput qSpaceLeft">
+    <input matInput type="number" [(ngModel)]="k" (change)="onChanged()" (keyup)="__checkNumber($event)"/>
+    <mat-hint align="start"><strong>K</strong></mat-hint>
+  </mat-form-field>
+</div>

@@ -1,0 +1,23 @@
+.bar-container
+{
+  width: 460px;
+}
+
+.bar-right
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bar-title
+{
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.squeeze
+{
+  margin-left: -15px;
+}

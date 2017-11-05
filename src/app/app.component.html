@@ -1,0 +1,55 @@
+<div class="card-container card">
+  <div>
+    <span class="card-center"><mat-icon class="rotated">sim_card</mat-icon> Quaterion Calculator</span>
+  </div>
+
+  <!-- First input quaternion and memory operations -->
+  <div class="card-center">
+    <app-quaternion #q1 id="q1" (qChanged)="onQuaternionChanged($event)"></app-quaternion>
+  </div>
+  <app-memory id="Q_1" (memTo)="onToMemory($event)" (memFrom)="onFromMemory($event)"></app-memory>
+
+  <!-- Operations -->
+  <div class="card-center">
+    <button mat-icon-button color="primary" (click)="onAdd()">
+      <mat-icon title="Add" aria-label="Add">add</mat-icon>
+    </button>
+
+    <button mat-icon-button color="primary" (click)="onSubtract()">
+      <mat-icon title="Subtract" aria-label="Subtract">remove</mat-icon>
+    </button>
+
+    <button mat-icon-button color="primary" (click)="onMultiply()">
+      <mat-icon title="Multiply" aria-label="Multiply">clear</mat-icon>
+    </button>
+
+    <button mat-icon-button color="primary" (click)="onDivide()">
+      <mat-icon class="backRotated" title="Divide" aria-label="Divide">remove</mat-icon>
+    </button>
+  </div>
+
+  <!-- Second input quaternion and memory operations (id's are important to pick up properties from the event cur. target) -->
+  <div class="card-center">
+    <app-quaternion #q2 id="q2" (qChanged)="onQuaternionChanged($event)"></app-quaternion>
+  </div>
+  <app-memory id="Q_2" (memTo)="onToMemory($event)" (memFrom)="onFromMemory($event)"></app-memory>
+
+  <!-- equals -->
+  <div class="card-center">
+    <span><mat-icon class="rotated">pause</mat-icon></span>
+  </div>
+
+  <!-- Result quaternion is read-only-->
+  <div class="card-center">
+    <app-result #result></app-result>
+  </div>
+
+  <!-- Clear the calculator -->
+  <div>
+    <span class="card-footer">op: {{operation}}
+      <button mat-button color="primary" (click)="onClear()">Clear</button>
+      <button mat-button color="primary" (click)="onSave()">Save</button>
+    </span>
+  </div>
+</div>`
+
