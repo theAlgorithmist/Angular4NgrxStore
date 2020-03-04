@@ -7,7 +7,7 @@ This calculator is something I use as a _hello world_ project to evaluate new to
 I recently looked into the 4.x release and decided it was time to re-engage with this popular state-management tool.  So, once again, here is an updated version of the Quaternion Calculator with Angular 4, _@ngrx/store_, Material 2, and the Typescript Math Toolkit _Quaternion_ class.  Mmmmm ... tasty :)
  
 
-Author:  Jim Armstrong - [The Algorithmist]
+Author:  Jim Armstrong - [The Algorithmist](https://www.linkedin.com/in/jimarmstrong)
 
 @algorithmist
 
